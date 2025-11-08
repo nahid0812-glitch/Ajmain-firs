@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Blaster</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ui">
+      <h1>Neon Blaster</h1>
+      <p>Move with WASD or arrow keys. Press Space or Click to shoot. Survive as long as you can!</p>
+      <div class="stats">
+        <span>Score: <span id="score">0</span></span>
+        <span>Lives: <span id="lives">3</span></span>
+        <span>Time: <span id="time">0</span>s</span>
+      </div>
+      <button id="restart" class="hidden">Restart</button>
+    </div>
+    <canvas id="game" width="800" height="600"></canvas>
+    <script src="main.js"></script>
+  </body>
+</html>
