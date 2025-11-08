@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starfield Shooter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hud">
+        <h1>Starfield Shooter</h1>
+        <div class="hud__stats">
+          <p><span class="label">Score:</span> <span id="score">0</span></p>
+          <p><span class="label">Lives:</span> <span id="lives">3</span></p>
+          <p><span class="label">Wave:</span> <span id="wave">1</span></p>
+        </div>
+        <p class="hud__help">
+          Move with <strong>WASD</strong> or the arrow keys and press <strong>Space</strong>
+          or <strong>Enter</strong> to shoot.
+        </p>
+      </section>
+      <canvas id="game" width="800" height="600" aria-label="Starfield Shooter canvas"></canvas>
+      <section class="modal" id="overlay" hidden>
+        <div class="modal__content" role="dialog" aria-labelledby="modal-title">
+          <h2 id="modal-title">Game Over</h2>
+          <p id="modal-message"></p>
+          <button id="restart">Restart</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
